@@ -16,7 +16,7 @@ affinity <- affinity[-which(affinity$logRF == 0), ] ## discard the rows with low
 isoforms <- levels(affinity$Isoforms) 
 sublibrary <- c("N", "C")
 isoform.sublib <- apply(expand.grid(isoforms, sublibrary), 1, paste, collapse = ".")
-
+dpps.results <-
 for (i in isoforms) {
   for (j in sublibrary) {
     affinity.isoform <- subset(affinity, Isoforms == i)
@@ -66,4 +66,3 @@ for (i in isoforms) {
     ## final.data[names(final.data) == paste(i, j, collapse = ".")] <- list(RMSE = rmse, R2 = r2, model = fit)
   }
 }
-
