@@ -8,7 +8,7 @@ The data used in this analysis is retrived from [the 14-3-3 microarray dataset](
 
 The amino acid descriptors ([DPPS](./data/DPPS), [G8](./data/G8), [HESH](./data/HESH), [VHSE](./data/VHSE), [zScale](./data/zScale)), the raw and [processed](./data/14_3_3_affinity.tsv) data can be found in the `data` folder.
 
-#### 3rd party libraries
+##### 3rd party libraries used in the study.
 + tidyverse
 + glmnet
 + caret
